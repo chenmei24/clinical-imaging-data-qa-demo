@@ -1,0 +1,9 @@
+﻿source_row,record_id,field,issue,action
+11,SYN-010,age_years,Age outside 0-120,Retained; source owner to verify
+22,SYN-021,lesion_value,Nonpositive measurement,Retained; source owner to verify
+36,SYN-035,sex_code,Unexpected code,Retained; check data dictionary
+49,SYN-048,age_years,Missing age,Retained blank; no imputation
+73,SYN-072,scan_date,Invalid ISO date,Retained; source owner to verify
+81,SYN-080,lesion_unit,Unit conversion,Converted 2.7 cm to 27.0 mm
+120,SYN-001,record_id,Duplicate ID,Retained; source owner to resolve
+121,SYN-002,record_id,Duplicate ID,Retained; source owner to resolve

@@ -1,0 +1,2 @@
+source_row,record_id,field,before,after,reason
+81,SYN-080,lesion_value / lesion_unit,2.7 cm,27.0 mm,cm-to-mm normalization

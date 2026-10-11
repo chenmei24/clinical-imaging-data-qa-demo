@@ -1,0 +1,18 @@
+{
+  "dataset": "synthetic demonstration; no real patient data claimed",
+  "source_rows": 120,
+  "output_rows": 120,
+  "rows_dropped": 0,
+  "qa_events": 8,
+  "open_queries": 7,
+  "documented_changes": 1,
+  "issue_counts": {
+    "Age outside 0-120": 1,
+    "Duplicate ID": 2,
+    "Invalid ISO date": 1,
+    "Missing age": 1,
+    "Nonpositive measurement": 1,
+    "Unexpected code": 1,
+    "Unit conversion": 1
+  }
+}
