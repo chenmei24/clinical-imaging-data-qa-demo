@@ -1,8 +1,12 @@
 # Clinical imaging data QA — a reproducible synthetic demo
 
+[![Reproduce synthetic QA example](https://github.com/chenmei24/clinical-imaging-data-qa-demo/actions/workflows/qa.yml/badge.svg)](https://github.com/chenmei24/clinical-imaging-data-qa-demo/actions/workflows/qa.yml)
+
 **120 synthetic records · 8 documented QA events · 1 defensible unit conversion · 0 silently dropped rows**
 
 This portfolio project shows how a messy clinical-imaging research export can become a **traceable review package**. Every record is fictional (`SYN-*`); this is a self-created demonstration, not a client project, patient dataset, diagnosis, or research result.
+
+Need the same audit for your own authorized, de-identified dataset? [Request a scoped project through Upwork](https://www.upwork.com/freelancers/~0149df5417ad7e0bcf).
 
 ![One-page synthetic data quality audit preview](assets/portfolio_preview.png)
 
