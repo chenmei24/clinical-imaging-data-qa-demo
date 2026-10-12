@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="640" viewBox="0 0 1280 640" role="img" aria-labelledby="title desc">
+<title id="title">Clinical imaging data QA — reproducible synthetic portfolio</title>
+<desc id="desc">Counts from the committed synthetic example: 120 records, 8 QA events, 1 logged conversion, 0 rows dropped, 7 open queries. No real patient or client outcome claimed.</desc>
+<defs>
+<linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#0b1527"/><stop offset="1" stop-color="#13263b"/></linearGradient>
+</defs>
+<rect width="1280" height="640" fill="url(#bg)"/>
+<rect x="0" y="0" width="1280" height="8" fill="#77ded2"/>
+<circle cx="1240" cy="10" r="220" fill="#77ded2" opacity="0.045"/>
+<g font-family="DejaVu Sans, Arial, sans-serif"><rect x="64" y="59" width="122" height="31" rx="15" fill="#77ded2" fill-opacity="0.13"/>
+<text x="125" y="81" text-anchor="middle" fill="#77ded2" font-size="15" font-weight="700">OPEN SOURCE</text>
+<text x="200" y="81" fill="#9db2c8" font-size="16">SYNTHETIC PORTFOLIO</text>
+<text x="64" y="164" fill="#f6f9fd" font-size="52" font-weight="700">Clinical data QA</text>
+<text x="64" y="262" fill="#f6f9fd" font-size="47" font-weight="700">Keep the source.</text>
+<text x="64" y="322" fill="#f6f9fd" font-size="47" font-weight="700">Explain each change.</text>
+<text x="64" y="399" fill="#b7c9dd" font-size="23">Reviewable CSV queries, changes</text>
+<text x="64" y="432" fill="#b7c9dd" font-size="23">and reproducible deliverables.</text><rect x="686" y="104" width="530" height="420" rx="20" fill="#192d43" stroke="#3d586f"/>
+<text x="714" y="145" fill="#9db2c8" font-size="17">COMMITTED SYNTHETIC EXAMPLE</text><rect x="714" y="168" width="225" height="116" rx="12" fill="#20394e"/>
+<text x="734" y="231" fill="#8eeadd" font-size="51" font-weight="700">120</text>
+<text x="734" y="263" fill="#c4d5e5" font-size="18">synthetic records</text><rect x="963" y="168" width="225" height="116" rx="12" fill="#20394e"/>
+<text x="983" y="231" fill="#8eeadd" font-size="51" font-weight="700">8</text>
+<text x="983" y="263" fill="#c4d5e5" font-size="18">QA events</text><rect x="714" y="300" width="225" height="116" rx="12" fill="#20394e"/>
+<text x="734" y="363" fill="#8eeadd" font-size="51" font-weight="700">1</text>
+<text x="734" y="395" fill="#c4d5e5" font-size="18">logged conversion</text><rect x="963" y="300" width="225" height="116" rx="12" fill="#20394e"/>
+<text x="983" y="363" fill="#8eeadd" font-size="51" font-weight="700">0</text>
+<text x="983" y="395" fill="#c4d5e5" font-size="18">rows dropped</text><line x1="714" y1="444" x2="1188" y2="444" stroke="#38536d"/>
+<text x="951" y="483" text-anchor="middle" fill="#a3e9df" font-size="20">7 open queries · no guessed corrections</text>
+<line x1="64" y1="566" x2="1216" y2="566" stroke="#36506b"/>
+<text x="64" y="608" fill="#d3e0ef" font-size="19">Synthetic demo · Traceable CSV QA</text>
+<text x="1216" y="608" text-anchor="end" fill="#91a7be" font-size="18">github.com/chenmei24</text>
+</g></svg>
