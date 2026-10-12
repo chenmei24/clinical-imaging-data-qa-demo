@@ -1,0 +1,73 @@
+{
+  "schema_name": "clinical-imaging-synthetic-demo",
+  "schema_version": "1.0",
+  "purpose": "Documentation of fixed demonstration rules, not a runtime configuration file or a clinical standard.",
+  "input_encoding": "UTF-8 with optional BOM",
+  "header_order": "Any order; exact names required; no missing, extra, or duplicate columns.",
+  "output_column_order": [
+    "record_id",
+    "age_years",
+    "sex_code",
+    "modality",
+    "lesion_value",
+    "lesion_unit",
+    "scan_date"
+  ],
+  "columns": {
+    "record_id": {
+      "type": "string",
+      "rule": "Nonempty and unique; fictional committed IDs use SYN-*.",
+      "on_invalid": "Retain and query; do not merge or drop."
+    },
+    "age_years": {
+      "type": "integer text",
+      "minimum": 0,
+      "maximum": 120,
+      "rule": "ASCII digits only; leading zeroes allowed; no automatic whitespace normalization.",
+      "on_invalid": "Retain blank/invalid text and query; no imputation."
+    },
+    "sex_code": {
+      "type": "string",
+      "allowed_values": ["F", "M"],
+      "on_invalid": "Retain and query against the source owner's data dictionary."
+    },
+    "modality": {
+      "type": "string",
+      "allowed_values": ["CT", "MRI"],
+      "on_invalid": "Retain and query."
+    },
+    "lesion_value": {
+      "type": "decimal text",
+      "rule": "Finite and positive; decimal or scientific notation accepted by Python Decimal.",
+      "on_invalid": "Retain and query; nonpositive, nonfinite, or unrepresentable cm conversions are not applied."
+    },
+    "lesion_unit": {
+      "type": "string",
+      "canonical_value": "mm",
+      "accepted_conversion_unit": "cm",
+      "conversion": "Multiply a finite positive value by 10 exactly using decimal exponent shifting; log before/after and reason.",
+      "on_invalid": "Retain and query; do not guess the intended unit."
+    },
+    "scan_date": {
+      "type": "calendar date text",
+      "format": "YYYY-MM-DD",
+      "on_invalid": "Retain and query."
+    }
+  },
+  "preservation": {
+    "source": "Read only; reject source/output aliases.",
+    "records": "Retain every structurally valid source record.",
+    "source_row": "Logical CSV record position, with the header at 1; not necessarily the physical text line number.",
+    "qa_events": "Number of logged events; a record may have multiple events.",
+    "open_queries": "QA events minus documented conversions.",
+    "delivery": "Stage all four files; recover previous outputs on ordinary publish errors; keep recovery files if rollback fails."
+  },
+  "committed_example": {
+    "source_rows": 120,
+    "output_rows": 120,
+    "rows_dropped": 0,
+    "qa_events": 8,
+    "open_queries": 7,
+    "documented_changes": 1
+  }
+}
